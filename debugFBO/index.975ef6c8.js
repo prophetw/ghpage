@@ -553,16 +553,16 @@ const initSpector = (callback = ()=>{
             window.spector = spector;
             console.log(' spector ', spector);
             spector.spyCanvas();
-            document.getElementById('spector').addEventListener('click', ()=>{
-                console.log(' display ui ');
-                spector.displayUI();
-            });
-            document.getElementById('start').addEventListener('click', ()=>{
-                const canvasDom = document.getElementById('webgl');
-                const commandCount = 150;
-                // spector.captureCanvas(canvasDom)
-                spector.startCapture(canvasDom, 50);
-            });
+            // document.getElementById('spector').addEventListener('click', () => {
+            //   console.log(' display ui ');
+            //   spector.displayUI()
+            // })
+            // document.getElementById('start').addEventListener('click', () => {
+            //   const canvasDom = document.getElementById('webgl')
+            //   const commandCount = 150
+            //   // spector.captureCanvas(canvasDom)
+            //   spector.startCapture(canvasDom, 50)
+            // })
             if (!spector.resultView) {
                 spector.getResultUI();
                 spector.onCapture.add((capture)=>{
@@ -578,18 +578,18 @@ const initSpector = (callback = ()=>{
     };
 };
 let ExampleFn;
-ExampleFn = _pick.LOGLPickComplete;
-ExampleFn = _ch10.BlendedCube;
-ExampleFn = _ch10.BlendedCubeTwgl;
-ExampleFn = _ch10.BlendedRectTwgl;
-ExampleFn = _twglapi.TWGLTexRing;
-ExampleFn = _twgleg.TWGLBlendedPlane2;
-ExampleFn = _twgleg.TWGLBlendedPlane;
-ExampleFn = _ch10.FramebufferObject;
-ExampleFn = _twgleg.Primitives;
-ExampleFn = _deffer.Defer;
-ExampleFn = _twgleg.MRT;
-ExampleFn = _oit.TWGLOIT;
+// ExampleFn = LOGLPickComplete
+// ExampleFn = BlendedCube
+// ExampleFn = BlendedCubeTwgl
+// ExampleFn = BlendedRectTwgl
+// ExampleFn = TWGLTexRing
+// ExampleFn = TWGLBlendedPlane2
+// ExampleFn = TWGLBlendedPlane
+// ExampleFn = FramebufferObject
+// ExampleFn = Primitives
+// ExampleFn = Defer
+// ExampleFn = MRT
+// ExampleFn = TWGLOIT
 ExampleFn = _oitdualDepthPeeling.TWGLOITDDP;
 // ExampleFn = TWGLOITPlane
 // ExampleFn = TextureLab
