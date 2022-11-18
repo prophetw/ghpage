@@ -551,7 +551,7 @@ const initSpector = (callback = ()=>{
         if (window.SPECTOR !== undefined) {
             const spector = new _spectorjs.Spector();
             window.spector = spector;
-            console.log(' spector ', spector);
+            console.log(' ---- spector ', spector);
             spector.spyCanvas();
             // document.getElementById('spector').addEventListener('click', () => {
             //   console.log(' display ui ');
@@ -588,8 +588,8 @@ let ExampleFn;
 // ExampleFn = FramebufferObject
 // ExampleFn = Primitives
 // ExampleFn = Defer
-// ExampleFn = MRT
-// ExampleFn = TWGLOIT
+ExampleFn = _twgleg.MRT;
+ExampleFn = _oit.TWGLOIT;
 ExampleFn = _oitdualDepthPeeling.TWGLOITDDP;
 // ExampleFn = TWGLOITPlane
 // ExampleFn = TextureLab
