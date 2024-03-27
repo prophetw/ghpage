@@ -1,7 +1,7 @@
-## demo1 (https://prophetw.github.io/)[virtualThumbnailList]
+## [virtualThumbnailList](https://prophetw.github.io/ghpage)
 virtual thumbnail list 
 
-## demo2 (https://prophetw.github.io/debugFBO)[debugFBO]
+## [debugFBO](https://prophetw.github.io/ghpage/debugFBO)
 webgl debug base on spector.js
 
 
